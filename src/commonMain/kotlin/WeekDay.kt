@@ -10,7 +10,7 @@ class WeekDay : JapaneseHoliday {
     }
 
     override fun equals(other: Any?): Boolean {
-        if (other is WeekDay) {
+        if (other is JapaneseHoliday) {
             return this.toJapaneseString() == other.toJapaneseString()
         }
         return false
