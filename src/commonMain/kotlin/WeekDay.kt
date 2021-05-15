@@ -15,4 +15,8 @@ class WeekDay : JapaneseHoliday {
         }
         return false
     }
+
+    override fun hashCode(): Int {
+        return this::class.hashCode()
+    }
 }
